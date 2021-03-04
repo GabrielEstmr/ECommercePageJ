@@ -7,12 +7,17 @@ export default createGlobalStyle`
         box-sizing: border-box;
         outline: 0;
     }
+    html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     body {
         background: #FFFFFF;
         color: #000000;
         -webkit-font-smoothing: antialiased;
     }
-    body, input, button {
+    body, input, button, html {
         font-family: 'Barlow', serif;
         font-size: 16px;
     }
@@ -21,5 +26,26 @@ export default createGlobalStyle`
     }
     button {
         cursor: pointer;
+    }
+
+    @media only screen and (max-width: 1920px){
+        html{
+            font-size: 16px;
+        }
+    }
+
+    @media only screen and (max-width: 1000px){
+        html{
+            font-size: 13px;
+        }
+    }
+
+    @media only screen and (max-width: 500px){
+        html{
+            font-size: 13px;
+        }
+        #root{
+            width: 100vh;
+        }
     }
 `;
