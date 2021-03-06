@@ -6,12 +6,13 @@ import Col from 'react-bootstrap/Col';
 
 // import Grid from '@material-ui/core/Grid';
 
-import { SectionBrands, SectionProducts, SectionSolutions } from './styles';
+import { SectionBrands, SectionProducts, SectionSolutions, SectionWeAreJussi, SectionContact, SectionNews } from './styles';
 
 
 import CardProdutos from '../../components/ProductsCard/index';
 import HeaderPage from '../../components/Header/index';
 import SolutionCard from '../../components/SolutionCard/index';
+import InputUnderLined from '../../components/InputUnderLined/index';
 
 
 import CardImgBatedeira from '../../assets/CardProduto-batedeira.png';
@@ -28,10 +29,14 @@ import imgP2 from '../../assets/card-solution-p2.png';
 import imgP3 from '../../assets/card-solution-p3.png';
 import imgP4 from '../../assets/card-solution-p4.png';
 
+import SecWeAreJussiBackIng from '../../assets/background-section-wearejussi.png';
+import JussiImgWeAreJussi from '../../assets/image-jussi-wearejussi.png';
+
 const HomePage: React.FC = () => (
+
     <>
-        <HeaderPage></HeaderPage>
-        <SectionProducts>
+        {/* <HeaderPage></HeaderPage> */}
+        < SectionProducts >
             <Container fluid="md">
                 <Row>
                     <Col>
@@ -56,7 +61,7 @@ const HomePage: React.FC = () => (
                 </Row>
             </Container>
 
-        </SectionProducts>
+        </SectionProducts >
 
         <SectionBrands>
             <Container fluid="md">
@@ -141,18 +146,41 @@ const HomePage: React.FC = () => (
 
         </SectionSolutions>
 
+        <SectionWeAreJussi backgroundImg={SecWeAreJussiBackIng}>
+            <Container fluid="md">
+                <Row>
+                    <Col xs={4}>
+                        <div className={'container-infos'}>
+                            <h2>Olá, somos<br></br>A Jüssi</h2>
+                            <p>A Jüssi é uma agência integrante do grupo global WPP que vem há 10 anos consolidando o pensamento voltado para produtos e resolução de problemas. Nosso área dedicada exclusivamente para Produtos Digitais é organizada em 6 especialidades: Product Managamenet, User Experience Design, SEO, Tecnologia, Agile e User Behavior Analytics.</p>
+                            <button>Conheça a Jüssi</button>
+                        </div>
+                    </Col>
+                    <Col>
+                        <img src={JussiImgWeAreJussi}></img>
+                    </Col>
+                </Row>
+            </Container>
+        </SectionWeAreJussi>
 
+        <SectionContact>
+            <div className={'container-infos'}>
+                <h3>Essa loja foi construída usando uma das nossas soluções da plataforma VTEX. tenha a sua.</h3>
+                <span>Entre em contato</span>
+                <h4>comercial@jussi.com.br</h4>
+            </div>
+        </SectionContact>
 
-
-
-
-
-
-
-
+        <SectionNews>
+            <div className={'container-infos'}>
+                <div className={'container-title'}>
+                    <span>//</span>
+                    <h3>receba novidades da nossa área<br></br>de produtos digitais.</h3>
+                </div>
+                <InputUnderLined placeHolder={'Digite seu e-mail'} btnMsg={'Cadastrar'} themeColor={'#03FFA5'}></InputUnderLined>
+            </div>
+        </SectionNews>
     </>
-
-
 
 );
 
@@ -162,56 +190,3 @@ export default HomePage;
 
 
 
-
-
-
-
-
-
-// import React from 'react';
-// import { makeStyles } from '@material-ui/core/styles';
-// import Paper from '@material-ui/core/Paper';
-// import Grid from '@material-ui/core/Grid';
-
-// const useStyles = makeStyles((theme) => ({
-//     root: {
-//         flexGrow: 1,
-//     },
-//     paper: {
-//         padding: theme.spacing(2),
-//         textAlign: 'center',
-//         color: theme.palette.text.secondary,
-//     },
-// }));
-
-// export default function FullWidthGrid() {
-//     const classes = useStyles();
-
-//     return (
-//         <div className={classes.root}>
-//             <Grid container spacing={3}>
-//                 <Grid item xs={12}>
-//                     <Paper className={classes.paper}>xs=12</Paper>
-//                 </Grid>
-//                 <Grid item xs={12} sm={6}>
-//                     <Paper className={classes.paper}>xs=12 sm=6</Paper>
-//                 </Grid>
-//                 <Grid item xs={12} sm={6}>
-//                     <Paper className={classes.paper}>xs=12 sm=6</Paper>
-//                 </Grid>
-//                 <Grid item xs={6} sm={3}>
-//                     <Paper className={classes.paper}>xs=6 sm=3</Paper>
-//                 </Grid>
-//                 <Grid item xs={6} sm={3}>
-//                     <Paper className={classes.paper}>xs=6 sm=3</Paper>
-//                 </Grid>
-//                 <Grid item xs={6} sm={3}>
-//                     <Paper className={classes.paper}>xs=6 sm=3</Paper>
-//                 </Grid>
-//                 <Grid item xs={6} sm={3}>
-//                     <Paper className={classes.paper}>xs=6 sm=3</Paper>
-//                 </Grid>
-//             </Grid>
-//         </div>
-//     );
-// }

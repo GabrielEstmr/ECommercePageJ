@@ -28,9 +28,39 @@ export default createGlobalStyle`
         cursor: pointer;
     }
 
+    @media only screen and (max-width: 3840px){
+        html{
+            font-size: 22px;
+        }
+
+        .container, .container-lg, .container-md, .container-sm, .container-xl {
+            max-width: 1893px;
+        }
+    }
+
+    @media only screen and (max-width: 2560px){
+        html{
+            font-size: 22px;
+        }
+
+        .container, .container-lg, .container-md, .container-sm, .container-xl {
+            max-width: 1493px;
+        }
+    }
+
     @media only screen and (max-width: 1920px){
         html{
             font-size: 16px;
+        }
+
+        .container, .container-lg, .container-md, .container-sm, .container-xl {
+            max-width: 1093px;
+        }
+    }
+
+    @media only screen and (max-width: 1200px){
+        .container, .container-lg, .container-md, .container-sm, .container-xl {
+            max-width: 1193px;
         }
     }
 

@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 
+interface PropsSectionWeAreJussi {
+  backgroundImg: string;
+};
 
 export const SectionProducts = styled.div`
   width: 100%;
@@ -95,7 +98,6 @@ export const SectionProducts = styled.div`
         align-items: center;
         /* black */
         border: 1px solid #000000;
-        box-sizing: border-box;
         border-radius: 6px;
       }
     }
@@ -201,18 +203,242 @@ export const SectionSolutions = styled.div`
 
 
 
+export const SectionWeAreJussi = styled.div<PropsSectionWeAreJussi>`
+  width: 100%;
+  height: fit-content;
+  min-height: 648px;
+  background: #FFFFFF;
+  background-image: url(${props => props.backgroundImg});
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  .container-infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    h2{
+      width: 241px;
+      height: 80px;
+      /* large */
+      font-family: Barlow;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 40px;
+      /* or 125% */
+      text-transform: uppercase;
+      /* black */
+      color: #000000;
+      /* Inside Auto Layout */
+
+    }
+
+    p{
+      width: 241px;
+      height: 292px;
+      /* paragraph */
+      font-family: Barlow;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      /* black */
+      color: #000000;
+      /* Inside Auto Layout */
+
+    }
+
+    button{
+      /* Auto Layout */
+      width: 162px;
+      height: 48px;
+      border: 1px solid #000000;
+      border-radius: 6px;
+      background-color: transparent;
+
+      /* Inside Auto Layout */
+      font-family: Barlow;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      /* black */
+
+      
+
+      
+      /* identical to box height, or 150% */
+
+
+      /* black */
+
+      color: #000000;
+
+    }
+
+  }
+
+  img{
+    width: 676px;
+    height: 520px;
+    margin: 0 0 0 20px;
+  }
+`;
+
+
+
+export const SectionContact = styled.div`
+  width: 100%;
+  height: fit-content;
+  min-height: 480px;
+  background: #EE0E7D;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  .container-infos{
+    width:680px;
+    height:220px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3{
+      width: 676px;
+      height: 120px;
+      /* large */
+      font-family: Barlow;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 40px;
+      /* or 125% */
+      text-align: center;
+      text-transform: uppercase;
+      /* white */
+      color: #FFFFFF;
+    }
+
+    span{
+      width: 122px;
+      height: 24px;
+      margin: 32px 0 0 0;
+      /* paragraph */
+      font-family: Barlow;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height, or 150% */
+      text-align: center;
+      /* white */
+      color: #FFFFFF;
+    }
+
+    h4{
+      width: 337px;
+      height: 24px;
+      margin: 8px 0 0 0;
+
+      font-family: Barlow;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 24px;
+      /* identical to box height, or 75% */
+      text-align: center;
+      /* white */
+      color: #FFFFFF;
+    }
+
+  }
+
+
+`;
 
 
 
 
 
+export const SectionNews = styled.div`
+  width: 100%;
+  height: fit-content;
+  min-height: 436px;
+  background: #000000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  .container-infos{
+    width:680px;
+    height:220px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .container-title{
+      width:680px;
+      height:80px;
+
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+
+      h3{
+        width: 676px;
+        height: 80px;
+        /* large */
+        font-family: Barlow;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        /* or 125% */
+        text-align: center;
+        text-transform: uppercase;
+        /* white */
+        color: #FFFFFF;
+      }
+
+      span{
+        width: 29px;
+        height: 24px;
+
+        font-family: Barlow;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 24px;
+        /* green-jussi */
+        color: #03FFA5;
+      }
+    }
+
+    
+
+  }
 
 
-
-
-
-
-
+`;
 
 
 
