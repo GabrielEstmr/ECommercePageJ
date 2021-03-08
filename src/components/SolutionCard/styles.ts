@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 
 export const Card = styled.div`
-    width: 241px;
-    height: 381px;
+    width: 15.06rem;
+    height: 23.81rem;
 
     /* white */
 
@@ -11,32 +11,38 @@ export const Card = styled.div`
     /* grey */
 
     border: 1px solid #F2F2F2;
-    border-radius: 4px;
+    border-radius: 0.25rem;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
 
-    
+    @media only screen and (max-width: 1000px){
+      margin: 0 0 0 2.5rem;
+    }
+
+    @media only screen and (max-width: 500px){
+      margin: 0 0 0 3.5rem;
+    }
 
     img{
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
-        margin: 16px 0 0 16px;
+        width: 6.25rem;
+        height: 6.25rem;
+        border-radius: 3.125rem;
+        margin: 1rem 0 0 1rem;
     }
 
     div{
-        margin: 0 16px 16px 16px;
+        margin: 0 1rem 1rem 1rem;
 
         h4{
             /* paragraph */
             font-family: Barlow;
             font-style: normal;
             font-weight: 500;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 1rem;
+            line-height: 1.5rem;
             /* identical to box height, or 150% */
             color: #000000;
             /* Inside Auto Layout */
@@ -50,8 +56,8 @@ export const Card = styled.div`
             font-family: Barlow;
             font-style: normal;
             font-weight: 500;
-            font-size: 12px;
-            line-height: 18px;
+            font-size: 0.75rem;
+            line-height: 1.125rem;
             /* identical to box height, or 150% */
             /* pink-jussi */
             color: #EE0E7D;
@@ -66,8 +72,8 @@ export const Card = styled.div`
             font-family: Barlow;
             font-style: normal;
             font-weight: 500;
-            font-size: 12px;
-            line-height: 18px;
+            font-size: 0.75rem;
+            line-height: 1.125rem;
             /* identical to box height, or 150% */
             /* dark-grey */
             color: #5B5B5B;
@@ -78,8 +84,8 @@ export const Card = styled.div`
         }
 
         button{
-            width: 209px;
-            height: 48px;
+            width: 13.06rem;
+            height: 3rem;
             /* green-jussi */
             background: #03FFA5;
             border-radius: 6px;

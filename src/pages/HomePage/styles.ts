@@ -7,7 +7,7 @@ interface PropsSectionWeAreJussi {
 export const SectionProducts = styled.div`
   width: 100%;
   height: fit-content;
-  min-height: 560px;
+  min-height: 35rem;
   background: #03FFA5;
 
   display: flex;
@@ -16,22 +16,22 @@ export const SectionProducts = styled.div`
 
   .container-title-left{
     width: 100%;
-    min-width:300px;
-    height: 360px;
+    min-width:18.75rem;
+    height: 22.5rem;
 
     display: flex;
     justify-content: center;
     align-items: flex-start;
 
     h2{
-      width: 87px;
-      height: 77px;
+      width: 5.43rem;
+      height: 4.81rem;
 
       font-family: Barlow;
       font-style: normal;
       font-weight: 500;
-      font-size: 64px;
-      line-height: 77px;
+      font-size: 4rem;
+      line-height: 4.81rem;
       /* identical to box height */
 
       text-transform: uppercase;
@@ -55,14 +55,14 @@ export const SectionProducts = styled.div`
       align-items: flex-start;
 
       h1{
-        width: 451px;
-        height: 231px;
+        width: 28.28rem;
+        height: 14.43rem;
         /* extra-large */
         font-family: Barlow;
         font-style: normal;
         font-weight: 500;
-        font-size: 64px;
-        line-height: 77px;
+        font-size: 4rem;
+        line-height: 4.81rem;
         text-transform: uppercase;
         /* black */
         color: #000000;
@@ -73,24 +73,24 @@ export const SectionProducts = styled.div`
       }
 
       p{
-        width: 329px;
-        height: 72px;
-        margin-top: 16px;
+        width: 20.56rem;
+        height: 4.5rem;
+        margin-top: 1rem;
 
         /* paragraph */
         font-family: Barlow;
         font-style: normal;
         font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5rem;
         /* or 150% */
         color: #000000;
       }
 
       button{
-        width: 196px;
-        height: 48px;
-        padding: 12px 24px;
+        width: 12.25rem;
+        height: 3rem;
+        padding: 0.75rem 1.5rem;
         background-color: transparent;
 
         display: flex;
@@ -98,7 +98,7 @@ export const SectionProducts = styled.div`
         align-items: center;
         /* black */
         border: 1px solid #000000;
-        border-radius: 6px;
+        border-radius: 0.375rem;
       }
     }
 
@@ -106,13 +106,26 @@ export const SectionProducts = styled.div`
 
   .container-title-right{
     width: 100%;
-    min-width:300px;
-    min-height: 360px;
+    min-width:18.75rem;
+    min-height: 22.5rem;
     height: fit-content;
 
     display: flex;
     justify-content: center;
     align-items: flex-start;
+
+    
+  }
+
+
+  .col-modified{
+    @media only screen and (max-width: 1000px){
+      margin: 10rem;
+    }
+
+    @media only screen and (max-width: 500px){
+      margin: 10rem;
+  }
   }
 
 `;
@@ -121,7 +134,7 @@ export const SectionProducts = styled.div`
 export const SectionBrands = styled.div`
   width: 100%;
   height: fit-content;
-  min-height: 80px;
+  min-height: 5rem;
   background: #F2F2F2;
 
   display: flex;
@@ -134,7 +147,7 @@ export const SectionBrands = styled.div`
     align-items: center;
 
     h5{
-      width: 300px;
+      width: 18.75rem;
     }
   }
 `;
@@ -143,7 +156,7 @@ export const SectionBrands = styled.div`
 export const SectionSolutions = styled.div`
   width: 100%;
   height: fit-content;
-  min-height: 557px;
+  min-height: 34.81rem;
   background: #FFFFFF;
 
   display: flex;
@@ -155,7 +168,15 @@ export const SectionSolutions = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
-    margin-bottom: 14px;
+    margin: 0 0 0.875rem 0;
+
+    @media only screen and (max-width: 1000px){
+      margin: 1rem 0 0.875rem 0;
+    }
+
+    @media only screen and (max-width: 500px){
+      margin: 1rem 0 0.875rem 0;
+    }
 
     span{
       /* width: 31px;
@@ -164,8 +185,8 @@ export const SectionSolutions = styled.div`
       font-family: Barlow;
       font-style: normal;
       font-weight: bold;
-      font-size: 32px;
-      line-height: 40px;
+      font-size: 2rem;
+      line-height: 2.5rem;
       /* identical to box height, or 125% */
       text-transform: uppercase;
       /* green-jussi */
@@ -174,7 +195,7 @@ export const SectionSolutions = styled.div`
       flex: none;
       order: 0;
       flex-grow: 0;
-      margin: 0px 4px;
+      margin: 0px 0.25rem;
     }
 
     h2{
@@ -186,8 +207,8 @@ export const SectionSolutions = styled.div`
       font-family: Barlow;
       font-style: normal;
       font-weight: bold;
-      font-size: 32px;
-      line-height: 40px;
+      font-size: 2rem;
+      line-height: 2.5rem;
       /* identical to box height, or 125% */
       text-transform: uppercase;
       /* black */
@@ -206,7 +227,7 @@ export const SectionSolutions = styled.div`
 export const SectionWeAreJussi = styled.div<PropsSectionWeAreJussi>`
   width: 100%;
   height: fit-content;
-  min-height: 648px;
+  min-height: 40.5rem;
   background: #FFFFFF;
   background-image: url(${props => props.backgroundImg});
   background-size: cover;
@@ -223,14 +244,14 @@ export const SectionWeAreJussi = styled.div<PropsSectionWeAreJussi>`
     align-items: flex-start;
 
     h2{
-      width: 241px;
-      height: 80px;
+      width: 15.06rem;
+      height: 5rem;
       /* large */
       font-family: Barlow;
       font-style: normal;
       font-weight: bold;
-      font-size: 32px;
-      line-height: 40px;
+      font-size: 2rem;
+      line-height: 2.5rem;
       /* or 125% */
       text-transform: uppercase;
       /* black */
@@ -240,14 +261,14 @@ export const SectionWeAreJussi = styled.div<PropsSectionWeAreJussi>`
     }
 
     p{
-      width: 241px;
-      height: 292px;
+      width: 15.06rem;
+      height: 18.25rem;
       /* paragraph */
       font-family: Barlow;
       font-style: normal;
       font-weight: 500;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 1rem;
+      line-height: 1.5rem;
       /* black */
       color: #000000;
       /* Inside Auto Layout */
@@ -256,18 +277,18 @@ export const SectionWeAreJussi = styled.div<PropsSectionWeAreJussi>`
 
     button{
       /* Auto Layout */
-      width: 162px;
-      height: 48px;
+      width: 10.125rem;
+      height: 3rem;
       border: 1px solid #000000;
-      border-radius: 6px;
+      border-radius: 0.375rem;
       background-color: transparent;
 
       /* Inside Auto Layout */
       font-family: Barlow;
       font-style: normal;
       font-weight: 500;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 1rem;
+      line-height: 1.5rem;
 
       display: flex;
       flex-direction: row;
@@ -290,9 +311,21 @@ export const SectionWeAreJussi = styled.div<PropsSectionWeAreJussi>`
   }
 
   img{
-    width: 676px;
-    height: 520px;
-    margin: 0 0 0 20px;
+    width: 42.25rem;
+    height: 32.5rem;
+    margin: 0 0 0 1.25rem;
+
+    @media only screen and (max-width: 1000px){
+      width: 100%;
+      height: 24.5rem;
+      margin: 3rem 0 0 1.25rem;
+    }
+
+    @media only screen and (max-width: 500px){
+      width: 100%;
+      height: 24.5rem;
+      margin: 3rem 0 0 1.25rem;
+    }
   }
 `;
 
@@ -301,7 +334,7 @@ export const SectionWeAreJussi = styled.div<PropsSectionWeAreJussi>`
 export const SectionContact = styled.div`
   width: 100%;
   height: fit-content;
-  min-height: 480px;
+  min-height: 30rem;
   background: #EE0E7D;
 
   display: flex;
@@ -310,40 +343,56 @@ export const SectionContact = styled.div`
   
 
   .container-infos{
-    width:680px;
-    height:220px;
+    width:42.5rem;
+    height:13.75rem;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    @media only screen and (max-width: 1000px){
+      width:40.5rem;
+    }
+
+    @media only screen and (max-width: 500px){
+      width:40.5rem;
+    }
+
     h3{
-      width: 676px;
-      height: 120px;
+      width: 42.25rem;
+      height: 7.5rem;
       /* large */
       font-family: Barlow;
       font-style: normal;
       font-weight: bold;
-      font-size: 32px;
-      line-height: 40px;
+      font-size: 2rem;
+      line-height: 2.5rem;
       /* or 125% */
       text-align: center;
       text-transform: uppercase;
       /* white */
       color: #FFFFFF;
+
+      @media only screen and (max-width: 1000px){
+        width:40.5rem;
+      }
+
+      @media only screen and (max-width: 500px){
+        width:40.5rem;
+      }
     }
 
     span{
-      width: 122px;
-      height: 24px;
-      margin: 32px 0 0 0;
+      width: 7.625rem;
+      height: 1.5rem;
+      margin: 2rem 0 0 0;
       /* paragraph */
       font-family: Barlow;
       font-style: normal;
       font-weight: 500;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 1rem;
+      line-height: 1.5rem;
       /* identical to box height, or 150% */
       text-align: center;
       /* white */
@@ -351,15 +400,15 @@ export const SectionContact = styled.div`
     }
 
     h4{
-      width: 337px;
-      height: 24px;
-      margin: 8px 0 0 0;
+      width: 21.06rem;
+      height: 1.5rem;
+      margin: 0.5rem 0 0 0;
 
       font-family: Barlow;
       font-style: normal;
       font-weight: 500;
-      font-size: 32px;
-      line-height: 24px;
+      font-size: 2rem;
+      line-height: 1.5rem;
       /* identical to box height, or 75% */
       text-align: center;
       /* white */
@@ -378,7 +427,7 @@ export const SectionContact = styled.div`
 export const SectionNews = styled.div`
   width: 100%;
   height: fit-content;
-  min-height: 436px;
+  min-height: 27.25rem;
   background: #000000;
 
   display: flex;
@@ -387,8 +436,8 @@ export const SectionNews = styled.div`
   
 
   .container-infos{
-    width:680px;
-    height:220px;
+    width:42.5rem;
+    height:13.75rem;
 
     display: flex;
     flex-direction: column;
@@ -396,38 +445,53 @@ export const SectionNews = styled.div`
     align-items: center;
 
     .container-title{
-      width:680px;
-      height:80px;
+      width:42.5rem;
+      height:5rem;
 
       display: flex;
       justify-content: center;
       align-items: baseline;
 
+      @media only screen and (max-width: 1000px){
+        width:40.5rem;
+      }
+  
+      @media only screen and (max-width: 500px){
+        width:40.5rem;
+      }
+
       h3{
-        width: 676px;
-        height: 80px;
+        width: 42.25rem;
+        height: 5rem;
         /* large */
         font-family: Barlow;
         font-style: normal;
         font-weight: bold;
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 2rem;
+        line-height: 2.5rem;
         /* or 125% */
         text-align: center;
         text-transform: uppercase;
         /* white */
         color: #FFFFFF;
+        @media only screen and (max-width: 1000px){
+          width:40.5rem;
+        }
+    
+        @media only screen and (max-width: 500px){
+          width:40.5rem;
+        }
       }
 
       span{
-        width: 29px;
-        height: 24px;
+        width: 1.81rem;
+        height: 1.5rem;
 
         font-family: Barlow;
         font-style: normal;
         font-weight: bold;
-        font-size: 32px;
-        line-height: 24px;
+        font-size: 2rem;
+        line-height: 1.5rem;
         /* green-jussi */
         color: #03FFA5;
       }
@@ -453,118 +517,3 @@ export const SectionNews = styled.div`
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-// export const Sections = styled.div`
-
-//   .section-products{
-//     background: #03FFA5;
-
-//     .container-title-left{
-//       width: 100%;
-//       height: 560px;
-
-//       display: flex;
-//       justify-content: center;
-//       align-items: flex-start;
-
-//       h2{
-//         width: 87px;
-//         height: 77px;
-
-//         font-family: Barlow;
-//         font-style: normal;
-//         font-weight: 500;
-//         font-size: 64px;
-//         line-height: 77px;
-
-
-//         text-transform: uppercase;
-
-
-//         color: #FFFFFF;
-
-
-//         flex: none;
-//         order: 0;
-//         flex-grow: 0;
-//         margin: 0px 0px;
-//       }
-
-//       div{
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: flex-start;
-
-//         h1{
-//           width: 451px;
-//           height: 231px;
-
-//           font-family: Barlow;
-//           font-style: normal;
-//           font-weight: 500;
-//           font-size: 64px;
-//           line-height: 77px;
-//           text-transform: uppercase;
-
-//           color: #000000;
-
-//           flex: none;
-//           flex-grow: 0;
-//           margin: 0px 0px;
-//         }
-
-//         p{
-//           width: 329px;
-//           height: 72px;
-//           margin-top: 16px;
-
-
-//           font-family: Barlow;
-//           font-style: normal;
-//           font-weight: 500;
-//           font-size: 16px;
-//           line-height: 24px;
-
-//           color: #000000;
-//         }
-
-//         button{
-//           width: 196px;
-//           height: 48px;
-//           padding: 12px 24px;
-//           background-color: transparent;
-
-//           display: flex;
-//           flex-direction: row;
-//           align-items: center;
-
-//           border: 1px solid #000000;
-//           box-sizing: border-box;
-//           border-radius: 6px;
-//         }
-//       }
-
-//     }
-
-//     .container-title-right{
-//       width: 100%;
-//       height: 560px;
-
-//       display: flex;
-//       justify-content: center;
-//       align-items: flex-start;
-//     }
-//   }
-
-// `;

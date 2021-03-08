@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 
 interface InputGroupProps {
-    themeColor: string;
+  themeColor: string;
 }
 
 
 export const InputGroup = styled.div<InputGroupProps>`
-  width: 502px;
-  height: 60px;
+  width: 31.375rem;
+  height: 3.75rem;
   border-bottom: 1px solid #03FFA5;
   background-color: transparent;
-  margin: 24px 0 0 0;
+  margin: 1.5rem 0 0 0;
 
   display: flex;
   justify-content: center;
@@ -18,14 +18,14 @@ export const InputGroup = styled.div<InputGroupProps>`
   
 
   button{
-    width: 89px;
-    height: 40px;
+    width: 5.57rem;
+    height: 2.5rem;
 
     font-family: Barlow;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 40px;
+    font-size: 1rem;
+    line-height: 2.5rem;
     /* identical to box height, or 250% */
     text-transform: uppercase;
     /* green-jussi */
@@ -46,8 +46,8 @@ export const InputGroup = styled.div<InputGroupProps>`
     font-family: Barlow;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: #FFFFFF;
     background-color: transparent;
     border: none;
@@ -56,8 +56,8 @@ export const InputGroup = styled.div<InputGroupProps>`
         font-family: Barlow;
         font-style: normal;
         font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5rem;
         color: #FFFFFF;
     }
 

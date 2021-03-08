@@ -66,13 +66,16 @@ export default createGlobalStyle`
 
     @media only screen and (max-width: 1000px){
         html{
-            font-size: 13px;
+            font-size: 15px;
+        }
+        #root{
+            width: 100vh;
         }
     }
 
     @media only screen and (max-width: 500px){
         html{
-            font-size: 13px;
+            font-size: 15px;
         }
         #root{
             width: 100vh;

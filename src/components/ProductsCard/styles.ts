@@ -8,12 +8,12 @@ interface ContainerProps {
 
 
 export const Card = styled.div<ContainerProps>`
-  width: 209px;
-  height: 271px;
+  width: 13.06rem;
+  height: 16.93rem;
 
   background-color: #FFFFFF;
   border: 1px solid #F2F2F2;
-  box-shadow: 0px 32px 32px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2rem 2rem rgba(0, 0, 0, 0.25);
   border-radius: 8px;
 
   display: flex;
@@ -29,22 +29,22 @@ export const Card = styled.div<ContainerProps>`
 
 
   img{
-      max-width: 183px;
-      max-height: 190px;
+      max-width: 11.43rem;
+      max-height: 11.87rem;
   }
 
   button{
-    height: 48px;
+    height: 3rem;
     width: fit-content;
-    min-width: 140px;
-    max-width: 180px;
+    min-width: 8.75rem;
+    max-width: 11.25rem;
     text-overflow: ellipsis;
     background-color: #FFFFFF;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 
     border: 1px solid #EE0E7D;
     box-sizing: border-box;
-    border-radius: 24px;
+    border-radius: 1.5rem;
     color: #EE0E7D;
   }
   
