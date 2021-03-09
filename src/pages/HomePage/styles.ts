@@ -150,6 +150,10 @@ export const SectionBrands = styled.div`
       width: 18.75rem;
     }
   }
+
+  .img-margin{
+    margin: 0 0 0 2rem;
+  }
 `;
 
 

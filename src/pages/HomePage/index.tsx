@@ -84,13 +84,13 @@ const HomePage: React.FC = () => {
                         <Col>
                             <div>
                                 <img src={LogoBrastemp}></img>
-                                <img src={LogoBrastemp}></img>
+                                <img className={'img-margin'} src={LogoCompraCerta}></img>
                             </div>
                         </Col>
                         <Col>
                             <div>
-                                <img src={LogoBrastemp}></img>
-                                <img src={LogoBrastemp}></img>
+                                <img src={LogoConsul}></img>
+                                <img className={'img-margin'} src={LogoTheBar}></img>
                             </div>
                         </Col>
                     </Row>
