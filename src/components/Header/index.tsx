@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import axios from 'axios';
 
-import baseURL from '../../baseUrl';
+// import baseURL from '../../baseUrl';
 
 import { Header } from './styles';
 
@@ -19,24 +19,24 @@ const HeaderPage: React.FC = () => {
 
     async function handleSubmitSearch2() {
 
-        try {
+        // try {
 
-            const response = await axios.get(baseURL + queryData);
+        //     const response = await axios.get(baseURL + queryData);
 
-            const resultado = response.data.items;
-            console.log(resultado);
-
-
-
-            setResultados([resultado]);
+        //     const resultado = response.data.items;
+        //     console.log(resultado);
 
 
 
+        //     setResultados([resultado]);
 
-        } catch (err) {
-            console.log('erro');
-            console.log(baseURL + `gabriel`);
-        }
+
+
+
+        // } catch (err) {
+        //     console.log('erro');
+        //     console.log(baseURL + `gabriel`);
+        // }
 
     }
 
